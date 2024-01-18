@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js" defer></script>
+    <script src="do-not-modify-this-file.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="container">
+            <div class="cell"></div>
+            <div class="cell">1</div>
+            <div class="cell">2</div>
+            <div class="cell">3</div>
+            <div class="cell"></div>
+
+            <div class="cell">A</div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell"></div>
+
+            <div class="cell">B</div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell"></div>
+
+            <div class="cell">C</div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell tile material-symbols-outlined"></div>
+            <div class="cell"></div>
+        </section>
+
+    </main>
+    <aside>
+        <section class="mode">
+            <select>
+                <option id =""selected="true" disabled="disabled">Select Game Mode</option>
+                <option value="human-human">Human vs Human</option>
+                <option value="human-ai">Human vs AI</option>
+                <option value="ai-ai">AI vs AI</option>
+            </select>
+        </section>
+
+        <section class="restart hide">
+            <button>Restart Game</button>
+        </section>
+
+        <section class="coordinates hide">
+            <input id = "inputBox" type="text" placeholder="Enter coordinates and press enter to submit">
+        </section>
+
+        <section class="ai hide">
+            <button>Generate AI coordinates</button>
+        </section>
+
+        
+    </aside>
+    <section class="display" id="display">
+    
+    </section>
+</body>
+
+</html>
