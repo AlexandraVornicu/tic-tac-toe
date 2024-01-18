@@ -44,16 +44,6 @@ function isInputValid(string) {
   const inputLength = string.length === 2
   const validStr = ["A", "B", "C"].includes(string.charAt(0))
   const validInt = ["1", "2", "3"].includes(string.charAt(1))
-  // const validInt = parseInt(string.substring(1)) < 4 ? true : false;
-  // let validStr = false;
-  // if (
-  //   string.substring(0, 1) === "A" ||
-  //   string.substring(0, 1) === "B" ||
-  //   string.substring(0, 1) === "C"
-  // ) {
-  //   validStr = true;
-  // }
-  // return validInt && validStr;
   return inputLength && validStr && validInt
 }
 
@@ -264,16 +254,9 @@ function processAICoordinate() {
 }
 
 function resetGame() {
-  // resetBoard();
-  // displayBoard(board);
-  // gameTurn = 0;
-  // setHTMLvisibilityForInputGameMode(true);
-  // setHTMLvisibilityForInputHumanCoordinates(false);
-  // setHTMLvisibilityForInputAiCoordinatesInput(false);
-  // setHTMLvisibilityForButtonLabeledReset(false);
-  // displayMessage("Player X's turn");
   location.reload();
 }
+
 function extractCoordinates(input) {
   switch (input) {
     case "A1":
